@@ -1,0 +1,23 @@
+package academy.devdojo.maratonajava.introducao;
+
+public class Aula05EstruturasCondicionais04 {
+    public static void main(String[] args) {
+        double annualSalary = 70000;
+        double firstTrack = 9.70 / 100;
+        double secondTrack = 37.35 / 100;
+        double thirdTrack = 49.50 / 100;
+        double taxAmount = 0;
+
+        if(annualSalary <= 34712) {
+            annualSalary = annualSalary * firstTrack;
+        } else if (annualSalary >= 34713 && annualSalary <= 68507) {
+            annualSalary = annualSalary * secondTrack;
+        } else{
+            annualSalary = annualSalary * thirdTrack;
+
+        }
+        System.out.println(annualSalary);
+
+    }
+
+}
